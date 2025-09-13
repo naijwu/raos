@@ -2,8 +2,6 @@
 #include "raos_types.h"
 #include "raos_errors.h"
 
-typedef struct RAOS_Handle RAOS_Handle;
-
 // gives memory required
 size_t raos_handle_bytes_required(void);
 

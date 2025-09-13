@@ -1,2 +1,2 @@
 # raos
-for controlling robotic arms
+robotic arm operating system

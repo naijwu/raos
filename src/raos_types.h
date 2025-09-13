@@ -10,6 +10,8 @@
   typedef float raos_scalar;
 #endif
 
+typedef struct RAOS_Handle RAOS_Handle;
+
 // Vector type
 typedef struct {
   raos_scalar x;
@@ -65,7 +67,7 @@ typedef struct {
   uint8_t dof;
   RAOS_JointDef joints[RAOS_MAX_DOF];
   RAOS_Mat4 base_T_world; // the arm's base in the world
-  RAOS_Mat4 tool_T_offset; // tool offset from end effector
+  RAOS_Mat4 tool_T_flange; // tool offset from end effector
 } RAOS_RobotConfig;
 
 // Where the tool is in the world
